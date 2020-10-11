@@ -39,6 +39,7 @@ public class Lanclass implements LanInterface{
 		 driver.findElement(By.xpath("//*[@id=\"dwfrm_singleshipping_shippingAddress_addressFields_firstName\"]")).sendKeys("ruchir");
 		 driver.findElement(By.xpath("//*[@id=\"dwfrm_singleshipping_shippingAddress_addressFields_lastName\"]")).sendKeys("ruchir");
 		 driver.findElement(By.xpath("//*[@id=\"dwfrm_singleshipping_shippingAddress_addressFields_addressSuggestion\"]")).sendKeys("ruchir");
+			Thread.sleep(2000);
 	    JavascriptExecutor jse;
 		jse = (JavascriptExecutor) driver;
 		jse.executeScript("alert('Checkout was Successfull')");
